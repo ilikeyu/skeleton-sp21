@@ -3,13 +3,13 @@ import java.util.Properties;
 public class GetEnvironmentVariables {
 
     //  Fill in the path to your sp21-s*** folder between the quotes
-    public static String REPO_DIR = "";
+    public static String REPO_DIR = "Users/luqing/temp";
 
     //  Fill in the path to your snaps-sp21-s*** folder between the quotes
     public static String SNAPS_DIR = "";
 
     // Fill in the type of your shell by running 'echo $0` in your terminal. It should be zsh or bash.
-    public static String SHELL = "";
+    public static String SHELL = "zsh";
 
     public static void main(String[] args) {
 
