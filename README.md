@@ -7,7 +7,7 @@
 
 ### July 10th
 
-1. accomplish lab1
+1. accomplish lab1 and HW0
 2. install IntelliJ IDE and set up the environment, also familiar with its basic operation
 3. learn how to use git ton control local&remote repository.
    1. git add / comment / push /pull
