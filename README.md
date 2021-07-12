@@ -30,7 +30,19 @@
 5. using libraries : built-in java libraries; Princeton std lib
 6. accomplish homework largerThanFourNeighbors
 
-### lists
+### Primitive type & reference type
 
+1. 8 primitive types; int 32bits, double 64bits.
+2. GRoE: Golden Rule of Equal, how equal works: copy the bits.
+3. Address 64bits, **new** method return an address; null make all 64bits Zero.
+   - Undefined != null; 
+4. parameter passing: pass the value, always copy the bits
+5. address is shout by **new** and falls on deaf ears: assignment, if no assignment, address is lost, then will be recycled by garbage collector. constructor returns
+6. Intlist, arbitrarily large, not a fix size.
+   - a method using **Recursion** to get list size; or **Iterative**
 
+### the SLList
 
+1. a list of Integer, and hide inside. SLList acts like a middle man between user and raw data structure.
+2. **private** *reflection* cannot use that attribute outside class.
+3. **Nest Class** move class inside other classes.
