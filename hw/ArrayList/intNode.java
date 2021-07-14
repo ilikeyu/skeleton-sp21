@@ -7,6 +7,7 @@ public class intNode{
 
 	public intNode(int i, intNode n){
 		item = i;
-		next = intNode;
+		next = n;
 	}
 }
+
