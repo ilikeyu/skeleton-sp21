@@ -41,8 +41,31 @@
 6. Intlist, arbitrarily large, not a fix size.
    - a method using **Recursion** to get list size; or **Iterative**
 
+## July 13th
+
 ### the SLList
 
 1. a list of Integer, and hide inside. SLList acts like a middle man between user and raw data structure.
-2. **private** *reflection* cannot use that attribute outside class.
-3. **Nest Class** move class inside other classes.
+2. **private** *reflection* cannot use that attribute outside class. **public** type in java will not be removed.
+3. **Nest Class** move class inside other classes, subordinate class.
+   - nest class on the top.
+   - nest class never use boss class resources, **static**.
+   - prefer non-nesting and vertical layouts.
+4. recurssive method need a helper method.
+5. let object control everything. do not need method to calculate, but a natural way to get it.
+6. Sentinel node：empty list also has s sentinel node.
+7. double link list: sentinel front & sentinel back, or make the list circular
+8. generic link list: public class SLList<userDefinedType> {}; 
+   - Main method: SLList<String> L = new SLList<String>("bone");
+   - when implementing data structure, specify "generic type" only once at the top.
+   - when using data structure, write out desired type during declaration.
+   - use empty diamond operator <> during instantiation.
+   - use the reference type: Integer, Double, Character, String, Boolean, Long.
+
+### Array
+
+1. create an array, have default value 0, null.
+2. string type store reference.
+3. arraycopy method: System.rraycopy(Source array, start pos, Target array, start pos, Number to copy).
+4. array and class have the same unchanged box.
+
