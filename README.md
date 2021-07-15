@@ -80,3 +80,14 @@
 
 ## July 15th
 
+### test
+
+1. deprecated: tolerated supported but not recommended.
+2. Unit test vs Intergration Test.
+3. focus on single task at one time.
+4. code refactor, keep function will more readable, simple, efficient.
+5. JUnit runner/renderer, delete main OK. 
+6. Test philosophy: 
+   - autograde workflow is slow and unsafe.
+   - Unit test! write test for every piece of method.
+7. Test-Driven Development *TDD*,
