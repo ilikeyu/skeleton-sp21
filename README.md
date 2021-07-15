@@ -59,8 +59,10 @@
    - Main method: SLList<String> L = new SLList<String>("bone");
    - when implementing data structure, specify "generic type" only once at the top.
    - when using data structure, write out desired type during declaration.
-   - use empty diamond operator <> during instantiation.
-   - use the reference type: Integer, Double, Character, String, Boolean, Long.
+   - use empty diamond operator <> during instantiation. arbitrary placeholder .
+   - use the reference type: Integer, Double, Character, String, Boolean, Long. not primitive type.
+
+## July 14th
 
 ### Array
 
@@ -68,4 +70,13 @@
 2. string type store reference.
 3. arraycopy method: System.rraycopy(Source array, start pos, Target array, start pos, Number to copy).
 4. array and class have the same unchanged box.
+
+### static
+
+1. specific to a class, all the instances of the same class share the same variable.
+2. instance has access to both the static and non-static method & variables.
+3. static method & class noe be allowed to access instance method & variable.
+4. null object cannot access variable, do not make sense.
+
+## July 15th
 
