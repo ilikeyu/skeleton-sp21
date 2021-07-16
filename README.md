@@ -91,3 +91,8 @@
    - autograde workflow is slow and unsafe.
    - Unit test! write test for every piece of method.
 7. Test-Driven Development *TDD*,
+
+## July 16th
+
+1. accomplish lab2: debug
+2. accomplish project0: 2048
