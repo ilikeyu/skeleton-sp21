@@ -1,4 +1,4 @@
-## aThis is my CS61b project
+## This is my CS61b project
 
 - I create my own branch
 - Maybe I will push my dairy here
@@ -105,5 +105,4 @@
    - recommend refactor code: x = B(arg); y=A(x); when test bug over, change the refactor code to the one-line version.
 4. Attention!  return BoolValue || RecurMethod(), the position is very important!
 5. set up **win environment**, download git, sdk, intelliJ, using git bash, very flexible!
-
 
