@@ -1,4 +1,4 @@
-## This is my CS61b project
+## aThis is my CS61b project
 
 - I create my own branch
 - Maybe I will push my dairy here
@@ -71,7 +71,7 @@
 
 1. specific to a class, all the instances of the same class share the same variable.
 2. instance has access to both the static and non-static method & variables.
-3. static method & class noe be allowed to access instance method & variable.
+3. static method & class not be allowed to access instance method & variable.
 4. null object cannot access variable, do not make sense.
 
 ## July 15th
@@ -90,10 +90,20 @@
 
 ## July 19th
 
-1. doing lab2
-2. according to the [setup guidance](https://sp21.datastructur.es/materials/lab/lab2setup/lab2setup), but in setting -> maven there is no "for new project", in the end, I open the project, and **File->project structure**, add the java jar in *javalib*.
-3. First open lab2, there is no source code, the open **project structure**, add the lab2 module, then the code appear.
-4. *erroe: Java language level is set to 5 which is not supported by the current Java version*, according to this [blog](https://www.cnblogs.com/KylinBlog/p/14147917.html), also need to **preference->java compiler**, set target byte code version equal to the maven pom/xml.
+### lab2 (accomplished!)
+
+1. Setup **intelliJ**
+   1. according to the [setup guidance](https://sp21.datastructur.es/materials/lab/lab2setup/lab2setup), but in setting -> maven there is no "for new project", in the end, I open the project, and **File->project structure**, add the java jar in *javalib*.
+   2. First open lab2, there is no source code, the open **project structure**, add the lab2 module, then the code appear.
+   3. *erroe: Java language level is set to 5 which is not supported by the current Java version*, according to this [blog](https://www.cnblogs.com/KylinBlog/p/14147917.html), also need to **preference->java compiler**, set target byte code version equal to the maven pom/xml.
+2. **Junit**:
+   1. Import org.junit.Test; static org.junit.Assert.*
+   2. assertEquals(expected, actual)
+   3. all test must be non-static(???)
+   4. JUnit tests are short-circuiting – as soon as one of the asserts in a method fails, it will output the failure and move on to the next test
+3. **Debug**: nested function call: A(B(arg)), when step in, IntelliJ will ask which function show the detail, if chose A, B step over.
+   - recommend refactor code: x = B(arg); y=A(x); when test bug over, change the refactor code to the one-line version.
+4. Attention!  return BoolValue || RecurMethod(), the position is very important!
 5. set up **win environment**, download git, sdk, intelliJ, using git bash, very flexible!
 
 
