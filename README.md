@@ -3,8 +3,6 @@
 - I create my own branch
 - Maybe I will push my dairy here
 
-
-
 ## July 10th
 
 1. accomplish lab1 and HW0
@@ -15,8 +13,6 @@
    3. git status / checkout
 4. Can not use Gradescope to auto grade. what a pity!
 5. would like to learn more operation about **gi**t in the future, such as how to restore, etc.
-
-
 
 ## July 11th
 
@@ -96,3 +92,9 @@
 
 1. accomplish lab2: debug
 2. accomplish project0: 2048
+
+## July 19th
+
+long time doing nothing
+
+just want to sleep zzz
