@@ -36,7 +36,7 @@ public class IntList {
         return rest.get(i - 1);
     }
 
-    /** Method to return a string representation of an IntList */
+    /** Method to return a string representation of an IntList recursively */
     public String toString() {
         if (rest == null) {
             // Converts an Integer to a String!
