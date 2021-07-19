@@ -94,4 +94,6 @@
 2. according to the [setup guidance](https://sp21.datastructur.es/materials/lab/lab2setup/lab2setup), but in setting -> maven there is no "for new project", in the end, I open the project, and **File->project structure**, add the java jar in *javalib*.
 3. First open lab2, there is no source code, the open **project structure**, add the lab2 module, then the code appear.
 4. *erroe: Java language level is set to 5 which is not supported by the current Java version*, according to this [blog](https://www.cnblogs.com/KylinBlog/p/14147917.html), also need to **preference->java compiler**, set target byte code version equal to the maven pom/xml.
+5. set up **win environment**, download git, sdk, intelliJ, using git bash, very flexible!
+
 
