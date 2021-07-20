@@ -110,3 +110,7 @@
 
 1. step into project0.
 2. MVC *Model-View-Controller* Pattern, **Observer** Mode
+3. emptySpaceExists: iterate the whole list and make sure every Tile class is not null.
+4. maxTileExist: iterate list and find whether one value equals MAX_PIECE.
+5. atLeastOneMoveExists: one situation exists empty space, and the other when the list is full, iterate the list and check whether every tile equals its right and down tile value.
+6. try to understand what the side mean.
