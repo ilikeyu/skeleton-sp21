@@ -106,3 +106,7 @@
 4. Attention!  return BoolValue || RecurMethod(), the position is very important!
 5. set up **win environment**, download git, sdk, intelliJ, using git bash, very flexible!
 
+## July 20th
+
+1. step into project0.
+2. MVC *Model-View-Controller* Pattern, **Observer** Mode
