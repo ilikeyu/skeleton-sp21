@@ -148,6 +148,7 @@ public class Model extends Observable {
         for (int col = 0; col < size; col++) {
             changed = eachColumnTilt(col, size) || changed;
         }
+        board.setViewingPerspective(Side.NORTH);
 
         checkGameOver();
         if (changed) {
