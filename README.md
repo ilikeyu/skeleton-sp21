@@ -114,3 +114,11 @@
 4. maxTileExist: iterate list and find whether one value equals MAX_PIECE.
 5. atLeastOneMoveExists: one situation exists empty space, and the other when the list is full, iterate the list and check whether every tile equals its right and down tile value.
 6. try to understand what the side mean.
+
+## July 21st
+
+1. accomplish project0
+2. using a helper method, consider every column one by one. 
+3. Still cannot understand what the Side class mean, some linear algebra needed.
+4. 2048 Game still have bugs, one obvious is that new tile occurs even there is already a tile.
+5. big rain yesterday evening and today afternoon.
