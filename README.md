@@ -50,7 +50,7 @@
 4. recurssive method need a helper method.
 5. let object control everything. do not need method to calculate, but a natural way to get it.
 6. Sentinel node：empty list also has s sentinel node.
-7. double link list: sentinel front & sentinel back, or make the list circular
+7. **double link list**: sentinel front & sentinel back, or make the list circular
 8. generic link list: public class SLList<userDefinedType> {}; 
    - Main method: SLList<String> L = new SLList<String>("bone");
    - when implementing data structure, specify "generic type" only once at the top.
@@ -64,7 +64,7 @@
 
 1. create an array, have default value 0, null.
 2. string type store reference.
-3. arraycopy method: System.rraycopy(Source array, start pos, Target array, start pos, Number to copy).
+3. arraycopy method: System.arraycopy(Source array, start pos, Target array, start pos, Number to copy).
 4. array and class have the same unchanged box.
 
 ### static
@@ -97,7 +97,7 @@
    2. First open lab2, there is no source code, the open **project structure**, add the lab2 module, then the code appear.
    3. *erroe: Java language level is set to 5 which is not supported by the current Java version*, according to this [blog](https://www.cnblogs.com/KylinBlog/p/14147917.html), also need to **preference->java compiler**, set target byte code version equal to the maven pom/xml.
 2. **Junit**:
-   1. Import org.junit.Test; static org.junit.Assert.*
+   1. Import org.junit.Test; **static org.junit.Assert.**
    2. assertEquals(expected, actual)
    3. all test must be non-static(???)
    4. JUnit tests are short-circuiting – as soon as one of the asserts in a method fails, it will output the failure and move on to the next test
@@ -108,7 +108,8 @@
 
 ## July 20th
 
-1. step into project0.
+### project0.
+
 2. MVC *Model-View-Controller* Pattern, **Observer** Mode
 3. emptySpaceExists: iterate the whole list and make sure every Tile class is not null.
 4. maxTileExist: iterate list and find whether one value equals MAX_PIECE.
@@ -117,8 +118,33 @@
 
 ## July 21st
 
-1. accomplish project0
-2. using a helper method, consider every column one by one. 
-3. Still cannot understand what the Side class mean, some linear algebra needed.
-4. 2048 Game still have bugs, one obvious is that new tile occurs even there is already a tile.
-5. big rain yesterday evening and today afternoon.
+###  project0
+
+1. using a helper method, consider every column one by one. 
+2. Still cannot understand what the Side class mean, some linear algebra needed.
+3. 2048 Game still have bugs, one obvious is that new tile occurs even there is already a tile.
+4. big rain yesterday evening and today afternoon.
+
+### Array list
+
+1. resizing arrays: System.arraycopy(origin, startPoint, destination, startPoint, length)  --->  mutiply a specific **factor**, instead of plus a number.
+2. **usage rate** = size / item.length.
+3. Generic Item Array: cannot be instantiated --->new GenType[] : (GenType[]) new Object[], ccause a complier warning, just ignore it.
+4. Stop **loitering**: nulling out items, otherwise its address stored in the array can consume a lot space.
+
+## Inheritance-implementation
+
+1. **overloading**: same name method using different types of parameter.
+2. **overriding**
+   1. Interface **Hyper**<GeneType>{}, show what hypernym could do (only method names); 
+   2. class **Hypo**<GeneType> implements **Hyper**<GeneType>{values, methods}, write your method for each hyponym class in detail.
+   3. subclass(hypo class) override the method; we can only say a method is overloaded.
+   4. have to override all the methods! otherwose will fail to compile.
+   5. @override: 
+      1. only a marker; have eact the same signature (parameter type).
+      2. catch typos, make sure subclass method name exact correspond to interface method.
+   6. default method.
+   7. Hyper<PrimitiveType> Item = **new** Hypo<PrimitiveType>();
+      1. item type will be the Hypo class type.
+      2. **Dynamic Type Selection** compile-time type *static type*, during declaration; Run-time type *dynamic type*, during Instantiation. when Dynamic override Static, then **Dynamic** type is uesd instead.
+   8. "Is-a" relationship.
