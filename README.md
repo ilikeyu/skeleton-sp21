@@ -123,7 +123,8 @@
 1. using a helper method, consider every column one by one. 
 2. Still cannot understand what the Side class mean, some linear algebra needed.
 3. 2048 Game still have bugs, one obvious is that new tile occurs even there is already a tile.
-4. big rain yesterday evening and today afternoon.
+4. while implementing to other directions, donot forget setViewFrom Side.NORTH after the main section of the program.
+5. Huge rain yesterday evening and today afternoon.
 
 ### Array list
 
