@@ -21,7 +21,31 @@ public class TimeAList {
         timeAListConstruction();
     }
 
+    /** calculate how long and how much time*/
     public static void timeAListConstruction() {
         // TODO: YOUR CODE HERE
+        int numCount = 9;
+        int numBase = 1000;
+
+        AList<Integer> Ns = new AList<>();
+        AList<Double> times = new AList<>();
+        AList<Integer> opCounts = new AList<>();
+        for (int count = 0; count < numCount; count++) {
+
+            Stopwatch sw = new Stopwatch();
+            AList<Integer> al = new AList<>();
+            for (int i = 0; i < numBase; i++) {
+                al.addLast(1);
+            }
+            double timeInSecond = sw.elapsedTime();
+
+            Ns.addLast(numBase);
+            times.addLast(timeInSecond);
+            opCounts.addLast(numBase);
+
+            numBase = numBase * 2;
+        }
+
+        printTimingTable(Ns, times, opCounts);
     }
 }
