@@ -1,11 +1,13 @@
 package deque;
 
+import edu.princeton.cs.algs4.StdRandom;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 
 /** Performs some basic linked list tests. */
-public class LinkedListDequeTest {
+public class LinkedListDequeRandomTest {
 
     @Test
     /** Adds a few things to the list, checking isEmpty() and size() are correct,
@@ -122,19 +124,21 @@ public class LinkedListDequeTest {
         System.out.println("Make sure to uncomment the lines below (and delete this print statement).");
 
         LinkedListDeque<Integer> lld1 = new LinkedListDeque<Integer>();
-        for (int i = 0; i < 1000000; i++) {
-            lld1.addLast(i);
+        for (int i = 0; i < 100; i++) {
+            int randVal = StdRandom.uniform(1, 100);
+            lld1.addLast(randVal);
         }
 
-        for (double i = 0; i < 500000; i++) {
-            assertEquals("Should have the same value", i, (double) lld1.removeFirst(), 0.0);
+        for (int i = 0; i < 5000; i++) {
+            int index = StdRandom.uniform(1,100);
+            System.out.println(index);
+            //int index = 9;
+            assertEquals("Should have the same value", lld1.get(index), lld1.getRecursive(index) );
         }
 
-        for (double i = 999999; i > 500000; i--) {
-            assertEquals("Should have the same value", i, (double) lld1.removeLast(), 0.0);
-        }
 
 
     }
+
 
 }
