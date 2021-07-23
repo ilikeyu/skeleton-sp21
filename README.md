@@ -130,7 +130,7 @@
 
 1. resizing arrays: System.arraycopy(origin, startPoint, destination, startPoint, length)  --->  mutiply a specific **factor**, instead of plus a number.
 2. **usage rate** = size / item.length.
-3. Generic Item Array: cannot be instantiated --->new GenType[] : (GenType[]) new Object[], ccause a complier warning, just ignore it.
+3. Generic Item Array: cannot be instantiated --->**new GenType[] : (GenType[]) new Object[]**, ccause a complier warning, just ignore it.
 4. Stop **loitering**: nulling out items, otherwise its address stored in the array can consume a lot space.
 
 ## Inheritance-implementation
@@ -160,4 +160,12 @@
 
 ### project 1
 
-1. 
+1. Package: canonical name v.s. simple name
+
+   - package names are the internet address of the entity writing the code, but backwards. e.g. junit.org --> org.junit
+   
+2. public static final int CAPITAL=100l;
+
+3. accomplish the first part: LinkedListDeque & ArrayDeque, findnig bugs is very verbose and exhausting!!!
+
+   
