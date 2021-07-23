@@ -149,3 +149,15 @@
       1. item type will be the Hypo class type.
       2. **Dynamic Type Selection** compile-time type *static type*, during declaration; Run-time type *dynamic type*, during Instantiation. when Dynamic override Static, then **Dynamic** type is uesd instead.
    8. "Is-a" relationship.
+
+## July 22nd
+
+### lab 3
+
+1. when list size varies, each call varies significantly; For small size, timer is unreliable; For different hardware, the eact number not the same , but the general trend is identical *asymptotic*.
+2. Resume and conditional breakpoints.
+3. Execution Breakpoints: this instanceof java.lang.outofbranch. no breakpoints for a specific line needed
+
+### project 1
+
+1. 
