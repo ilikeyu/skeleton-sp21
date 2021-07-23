@@ -53,13 +53,6 @@ public class LinkedListDeque<T> implements Deque<T> {
     }
 
     @Override
-    public boolean isEmpty() {
-        if (size()==0)
-            return true;
-        return false;
-    }
-
-    @Override
     public int size() {
         return size;
     }

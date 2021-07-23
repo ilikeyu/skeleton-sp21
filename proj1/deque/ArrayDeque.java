@@ -123,17 +123,10 @@ public class ArrayDeque<T> implements Deque<T> {
     }
 
     @Override
-    public boolean isEmpty() {
-        if( size == 0 ){
-            return true;
-        }
-        return false;
-    }
-
-    @Override
     public int size() {
         return size;
     }
+
     public int getNextFirst(){
         return nextFirst;
     }
