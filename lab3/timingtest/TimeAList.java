@@ -23,7 +23,7 @@ public class TimeAList {
 
     /** calculate how long and how much time*/
     public static void timeAListConstruction() {
-        // TODO: YOUR CODE HERE
+
         int numCount = 9;
         int numBase = 1000;
 
