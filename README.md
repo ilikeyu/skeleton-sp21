@@ -171,10 +171,9 @@
 1. Package: canonical name v.s. simple name
 
    - package names are the internet address of the entity writing the code, but backwards. e.g. junit.org --> org.junit
-   
 2. public static final int CAPITAL=100l;
-
 3. accomplish the first part: LinkedListDeque & ArrayDeque, findnig bugs is very verbose and exhausting!!!
+4. abstract class: only interface, no concrete way to exhibit behaviors.
 
 ##  july 24th
 
