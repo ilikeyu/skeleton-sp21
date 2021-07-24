@@ -145,10 +145,16 @@
       1. only a marker; have eact the same signature (parameter type).
       2. catch typos, make sure subclass method name exact correspond to interface method.
    6. default method.
-   7. Hyper<PrimitiveType> Item = **new** Hypo<PrimitiveType>();
-      1. item type will be the Hypo class type.
-      2. **Dynamic Type Selection** compile-time type *static type*, during declaration; Run-time type *dynamic type*, during Instantiation. when Dynamic override Static, then **Dynamic** type is uesd instead.
-   8. "Is-a" relationship.
+   7. only aply to non-static method.
+   
+3. Hyper<PrimitiveType> Item = **new** Hypo<PrimitiveType>();
+   1. item type will be the Hypo class type.
+   2. **Dynamic Type Selection** 
+      1. compile-time type *static type*, during declaration; compiler check this type, play it as safe as possible. **CONSERVERTIVE!**
+      2. Run-time type *dynamic type*, during Instantiation. 
+      3. when Dynamic override Static, then **Dynamic** type is uesd instead.
+      4. method calls have compile-type == declared type.
+   3. "Is-a" relationship.
 
 ## July 22nd
 
@@ -157,6 +163,8 @@
 1. when list size varies, each call varies significantly; For small size, timer is unreliable; For different hardware, the eact number not the same , but the general trend is identical *asymptotic*.
 2. Resume and conditional breakpoints.
 3. Execution Breakpoints: this instanceof java.lang.outofbranch. no breakpoints for a specific line needed
+
+## july 23rd
 
 ### project 1
 
@@ -167,5 +175,37 @@
 2. public static final int CAPITAL=100l;
 
 3. accomplish the first part: LinkedListDeque & ArrayDeque, findnig bugs is very verbose and exhausting!!!
+
+##  july 24th
+
+### extends
+
+1. cannot inherit private, constructor; but all constructor must start with the **super** class's constructor. otherwise implicitly call super().
+2. Every class explicitly extends **Object**: comparator, Dashcode.
+3. complexity
+4. Module, encapsulated
+5. casting to overrule compiler type check.
+6. **compiler** rules:
+   1. memory box hold any subtype, most top is Object.
+   2. only allow calls beaed on static type
+   3. overridden non-static methods selected based on dynamic type.
+   4. A *object1*; B *object2* = (B) *object1*;  not change the static type , but conptemporarily treat *object1* as type B.
+7. **hiding** method: address same variables, same static method signature.
+8. Subtype Polymorphism v.s. Explicit Higher Order Function *HoF*
+   1. class T implements comparable<T>: T A.compareTo(B);
+   2. **comparator** interface generic type; import java.util.comparator;
+   3. private class name/sizeComparator implements comparator<T>;
+   4. [Java基础系列-Comparable和Comparator](https://www.jianshu.com/p/f9870fd05958)
+9. Interface enable to make **callbacks**, warp up the needed functions.
+
+## July 25th
+
+### set
+
+
+
+
+
+   
 
    
