@@ -2,6 +2,7 @@ package deque;
 
 public interface Deque<T> {
 
+    // default modified by public abstract
     //insert item in the front of the deque
     public void addFirst(T item);
 

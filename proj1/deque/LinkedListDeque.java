@@ -121,12 +121,12 @@ public class LinkedListDeque<T> implements Deque<T> {
             return null;
         }
         queNode temp = sentinel;
-        if ( index< Math.round(size()/2) ){
+        if ( index< size>>1 ){
             for (int i = 1; i <= index; i++) {
                 temp = temp.next;
             }
         }else{
-            for (int i = size(); i >= index; i--) {
+            for (int i = size; i >= index; i--) {
                 temp =temp.back;
             }
         }
@@ -134,12 +134,11 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
 
-    private T getRecurFromSenti(int index){
+    private T getRecurHelper(queNode temp, int index){
         if (index == 1) {
-            return sentinel.nodeItem;
+            return temp.nodeItem;
         }
-        sentinel = sentinel.next;
-        return getRecurFromSenti(index-1);
+        return getRecurHelper(temp.next,index-1);
     }
 
     public T getRecursive(int index){
@@ -147,9 +146,6 @@ public class LinkedListDeque<T> implements Deque<T> {
         if ( !boundDetect(index) ){
             return null;
         }
-
-        LinkedListDeque<T> lld = new LinkedListDeque<>();
-        lld.sentinel = this.sentinel.next;
-        return lld.getRecurFromSenti(index);
+        return getRecurHelper(this.sentinel.next, index);
     }
 }

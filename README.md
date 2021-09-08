@@ -3,6 +3,12 @@
 - I create my own branch
 - Maybe I will push my dairy here
 
+## Tips
+
+1. add library
+
+![image-20210908164404453](README.assets/image-20210908164404453.png)
+
 ## July 10th
 
 1. accomplish lab1 and HW0
@@ -163,6 +169,9 @@
 1. when list size varies, each call varies significantly; For small size, timer is unreliable; For different hardware, the eact number not the same , but the general trend is identical *asymptotic*.
 2. Resume and conditional breakpoints.
 3. Execution Breakpoints: this instanceof java.lang.outofbranch. no breakpoints for a specific line needed
+##### test result
+
+![image-20210908170608702](README.assets/image-20210908170608702.png)
 
 ## july 23rd
 
@@ -197,13 +206,13 @@
    4. [Java基础系列-Comparable和Comparator](https://www.jianshu.com/p/f9870fd05958)
 9. Interface enable to make **callbacks**, warp up the needed functions.
 
-## July 25th
-
-### set
-
 ## Sep 8th
 
-
+1. complete MaxArrayDeque, introduce TWO override methods: max with no parameter, and max with parameter Compatator. 
+2. Note that size from 1 and we cannot get(0).
+3. try to use lambda expression and result is pleasing.
+4. still not knowing why import java.util.Test will cause error???
+5. complete GuitarString, learn something about Karplus-Strong algorithm, for I have no earpods yet, I'll try to play it tomorrow.
 
 
 
